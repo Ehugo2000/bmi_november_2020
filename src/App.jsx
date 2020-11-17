@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-
 import Form from "./components/Form";
 import Message from "./components/Message";
 import { calculateBmi } from "./helpers/bmiHelper";
+import Button from "./components/Button"
 
 class App extends Component {
   state = {
@@ -22,10 +22,14 @@ class App extends Component {
     );
     this.setState({ bmiValue: bmiValue, bmiMessage: bmiMessage });
   };
+  
 
   render() {
     return (
+     
       <div>
+      <h1>hello</h1>
+      <Button/>
         <Form
           weight={this.state.weight}
           height={this.state.height}
